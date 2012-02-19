@@ -627,7 +627,7 @@ $R \rightarrow \varepsilon ~ | ~aA ~ | ~a~ | ~bB~ | ~cC~ | ~c~$
 
 Vlastně jsme zkopírovali pravidla pro A, a z něj teď pravidlo pro epsilon vypustíme. Výsledná gramatika tedy bude 
 $G_1 = (\{R,A,B,C\}, \{a,b,c\}, R, P)$, kde P je sada pravidel:\\
-$R \rightarrow \varepsilon ~ | ~aA ~ | ~a~ | ~bB~ | ~cC~ | ~c~$\\
+$R \rightarrow aA ~ | ~a~ | ~bB~ | ~cC~ | ~c~ | ~ \varepsilon$\\
 $A \rightarrow aA ~ | ~a~ | ~bB~ | ~cC~ | ~c~$\\
 $B \rightarrow aC ~ | ~a~ | ~bB~ | ~cA~ | ~c$\\
 $C \rightarrow aA~ | ~aC~ |~a~ | ~ bB $
