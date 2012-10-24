@@ -409,7 +409,7 @@ $\leftarrow$ $[0,1,4]$ &        $[0,1,4]$ &     $[0,1,4]$\\
 \subsubsection{Příklad}
 \label{prefix}
 \emph{
-Sestrojte konečný automat nad abecedou A = \{a,b\}, který přijme slovo "abba" a všechny jeho neprázdné předpony (prefix automata)
+Sestrojte konečný automat nad abecedou A = \{a,b\}, který přijme slovo "abba" a všechny jeho neprázdné předpony (prefix automaton)
 }
 
 Na předpony existuje jednoduchý trik, automat bude mít více koncových stavů:
@@ -431,7 +431,7 @@ Automat je deterministický.
 
 \subsubsection{Příklad}
 \emph{
-Sestrojte konečný automat nad abecedou A = \{a,b\}, který přijme slovo "abba" a všechny jeho neprázdné přípony (suffix automata)
+Sestrojte konečný automat nad abecedou A = \{a,b\}, který přijme slovo "abba" a všechny jeho neprázdné přípony (suffix automaton)
 }
 
 Na přijímání přípon si vypomůžeme epsilon přechodem, abychom mohli přeskočit libovolnou část řetězce. Do stavu 4 neskáčeme, chceme pouze neprázdné přípony.
@@ -468,7 +468,7 @@ $[3]$ & $[4]$ & -\\
 
 \subsubsection{Příklad}
 \emph{
-Sestrojte konečný automat nad abecedou A = \{a,b\}, který přijme slovo "abba" a všechny jeho souvislé podřetězce (factor automata).
+Sestrojte konečný automat nad abecedou A = \{a,b\}, který přijme slovo "abba" a všechny jeho souvislé podřetězce (factor automaton).
 }
 
 Výsledek vznikne kombinací obou předchozích přístupů. Automat, který by přijímal pouze neprázdné podřetězce by byl o mnoho větší (zkuste si jak by vypadal ... je to vlastně sjednocení více automatů z bodu \ref{prefix} - předpony ze slov abba, bba, ba, a), nám bude stačit tato zkratka, která přijímá i prázdné slovo.
